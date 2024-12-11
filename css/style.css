@@ -3,8 +3,8 @@
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    text-align: center;
     transition: all .2s linear;
     text-decoration: none;
 }
@@ -149,13 +149,13 @@ body{
     min-height: 100vh;
     width: 100vw;
     background-image: url(../images/img1.jpg);
-    background-size: cover;
+    background-size: 200%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    padding: 0 1rem;
+    padding: 1rem 0;
     position: relative;
     overflow: hidden !important;
 }
@@ -233,6 +233,7 @@ body{
     font-size: 2rem;
     color: #333;
     padding: 1rem 0;
+    text-align: justify;
 }
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
@@ -371,9 +372,11 @@ body{
   }
   .section-head-1 p{
     color:#333;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 28px;
-    text-align: center;
+    text-align: justify;
+    padding: 1rem 0;
+    
   }
   .item{
     background:#fff;
@@ -473,6 +476,7 @@ body{
 
 .communicate p{
     font-size: 2rem;
+    line-height: 28px;
 }
 
 .testimonials {
@@ -802,6 +806,7 @@ body{
 
 		.contact-form-btn
 		{
+            text-align: center;
             margin-left: 2rem;
             outline: none;
             border: none;
