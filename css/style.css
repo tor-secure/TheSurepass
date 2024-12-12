@@ -169,6 +169,7 @@ body{
 .home h2{
     color: #fff;
     font-size: 3rem;
+    width: 90vw;
 }
 
 .home .wave{
@@ -235,6 +236,7 @@ body{
     color: #333;
     padding: 1rem 0;
     text-align: justify;
+    width: 90vw;
 }
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
@@ -861,6 +863,7 @@ body{
         .footer .footer-top .footer-contact,
         .footer .footer-top .footer-newsletter {
             margin-bottom: 30px;
+            text-align: left;
         }
         
         .footer .footer-top .social-links a {
@@ -891,6 +894,7 @@ body{
             padding-bottom: 12px;
             margin-bottom: 20px;
             letter-spacing: 1px;
+            text-align: left;
         }
         
         .footer .footer-top h4::before {
@@ -918,6 +922,7 @@ body{
         .footer .footer-top .footer-links ul li {
             border-bottom: 1px solid #ffffff;
             padding: 7px 0;
+            text-align: justify;
         }
         
         .footer .footer-top .footer-links ul li:first-child {
@@ -936,6 +941,7 @@ body{
         .footer .footer-top .footer-contact p {
             color: #ffffff;
             line-height: 26px;
+            text-align: justify;
         }
         
         .footer .footer-top .footer-newsletter input[type="email"] {
@@ -1163,7 +1169,7 @@ body{
     }
     
     .about .row{
-        line-height: 2rem;
+        line-height: 28px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1180,7 +1186,7 @@ body{
     }
     
     .about .row .content p{
-        font-size: 1.3rem;
+        font-size: 2rem;
         color: #333;
         padding: 1rem 0;
     } 
