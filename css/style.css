@@ -371,15 +371,15 @@ body{
     margin-bottom: 60px;
     background-size: 200%;
     background-position: left;
-
   }
   .section-head-1 p{
     color:#333;
     font-size: 2rem;
-    line-height: 28px;
+    line-height: 3rem;
     text-align: justify;
     padding: 1rem 0;
-    
+    margin-left: -120px;
+    margin-right: -120px;
   }
   .item{
     background:#fff;

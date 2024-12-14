@@ -125,6 +125,42 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById("togBtn4");
+    const textContent = document.getElementById("Content4");
+
+    toggleBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default behavior of the anchor
+
+        // Check the current display status of the paragraph
+        if (textContent.style.display === "none" || textContent.style.display === "") {
+            textContent.style.display = "block"; // Show the text
+            toggleBtn.textContent = "Read Less"; // Change button text to "Read Less"
+        } else {
+            textContent.style.display = "none"; // Hide the text
+            toggleBtn.textContent = "Read More"; // Change button text back to "Read More"
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById("togBtn5");
+    const textContent = document.getElementById("Content5");
+
+    toggleBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default behavior of the anchor
+
+        // Check the current display status of the paragraph
+        if (textContent.style.display === "none" || textContent.style.display === "") {
+            textContent.style.display = "block"; // Show the text
+            toggleBtn.textContent = "Read Less"; // Change button text to "Read Less"
+        } else {
+            textContent.style.display = "none"; // Hide the text
+            toggleBtn.textContent = "Read More"; // Change button text back to "Read More"
+        }
+    });
+});
+
 function setMinDate() {
     var today = new Date();
     var day = String(today.getDate()).padStart(2, '0'); // Add leading zero if necessary
