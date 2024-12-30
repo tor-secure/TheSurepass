@@ -1370,3 +1370,8 @@ body{
   align-items: center;
  
 }
+.midv{
+		display: flex;
+  justify-content: center;
+  align-items: center;
+}
