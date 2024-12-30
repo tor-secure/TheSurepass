@@ -1364,3 +1364,6 @@ body{
             width: 100%;
         }
 }
+.g-recaptcha{
+	display-items:centre;
+}
