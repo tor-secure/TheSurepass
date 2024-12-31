@@ -52,38 +52,97 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"
-        ><img
+    <nav
+      style="
+        background-color: #499143;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+      "
+    >
+      <div class="logo">
+        <img
           src="images/surePass-removebg-preview.png"
-          style="border-radius: 10px"
-          alt=""
-      /></a>
-      <div class="fas fa-bars"></div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home" style="text-decoration: none">Home</a></li>
-          <!-- <li><a href="#about">about</a></li> -->
-          <li><a href="#service" style="text-decoration: none">Services</a></li>
-          <!-- <li><a href="#portfolio">Blog</a></li> -->
-          <li>
-            <a href="#contact" style="text-decoration: none">Contact us</a>
-          </li>
-          <li>
-            <a
-              href="https://www.branchselector.com/"
-              style="text-decoration: none"
-              target="_blank"
-              >BranchSelector</a
-            >
-          </li>
-          <!-- <li><a href="careers.html">Book Appointments</a></li> -->
-          <!-- <li><a href="#team">team</a></li>
-                <li><a href="careers.html">career</a></li> -->
-          <!-- <li><a href="#faq">FAQ</a></li> -->
-        </ul>
-      </nav>
-    </header>
+          alt="Logo"
+          style="height: 43.76px; width: 200px"
+        />
+      </div>
+      <div
+        class="menu-icon"
+        style="display: none; cursor: pointer; color: white; font-size: 24px"
+      >
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul
+        id="nav-menu"
+        style="
+          list-style-type: none;
+          margin: 0;
+          padding: 5px;
+          display: flex;
+          gap: 1rem;
+        "
+      >
+        <li>
+          <a
+            href="/"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/#services"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="/#contact"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://branchselector.com"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >BranchSelector</a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <section id="home" class="home">
       <h1>Failing In Exams is Passé!</h1>
@@ -896,4 +955,38 @@
 
     <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
   </body>
+  <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const navMenu = document.getElementById("nav-menu");
+    let isMenuOpen = false;
+
+    function checkScreenSize() {
+      if (window.innerWidth <= 1000) {
+        menuIcon.style.display = "block";
+        navMenu.style.display = isMenuOpen ? "flex" : "none";
+        navMenu.style.flexDirection = "column";
+        navMenu.style.position = "absolute";
+        navMenu.style.top = "100%";
+        navMenu.style.right = "0";
+        navMenu.style.backgroundColor = "#499143";
+        navMenu.style.width = "100%";
+        navMenu.style.padding = "1rem";
+      } else {
+        menuIcon.style.display = "none";
+        navMenu.style.display = "flex";
+        navMenu.style.flexDirection = "row";
+        navMenu.style.position = "static";
+        navMenu.style.width = "auto";
+        navMenu.style.padding = "5px";
+      }
+    }
+
+    menuIcon.addEventListener("click", () => {
+      isMenuOpen = !isMenuOpen;
+      checkScreenSize();
+    });
+
+    window.addEventListener("resize", checkScreenSize);
+    checkScreenSize();
+  </script>
 </html>

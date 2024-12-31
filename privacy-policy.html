@@ -52,87 +52,244 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"
-        ><img
+    <nav
+      style="
+        background-color: #499143;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+      "
+    >
+      <div class="logo">
+        <img
           src="images/surePass-removebg-preview.png"
-          style="border-radius: 10px"
-          alt=""
-      /></a>
-      <div class="fas fa-bars"></div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="/" style="text-decoration: none">Home</a></li>
-          <!-- <li><a href="#about">about</a></li> -->
-          <li><a href="/#service" style="text-decoration: none">Services</a></li>
-          <!-- <li><a href="#portfolio">Blog</a></li> -->
-          <li>
-            <a href="/#contact" style="text-decoration: none">Contact us</a>
-          </li>
-          <li>
-            <a
-              href="https://www.branchselector.com/"
-              style="text-decoration: none"
-              target="_blank"
-              >BranchSelector</a
-            >
-          </li>
-          <!-- <li><a href="careers.html">Book Appointments</a></li> -->
-          <!-- <li><a href="#team">team</a></li>
-                <li><a href="careers.html">career</a></li> -->
-          <!-- <li><a href="#faq">FAQ</a></li> -->
-        </ul>
-      </nav>
-    </header><br><br>
+          alt="Logo"
+          style="height: 43.76px; width: 200px"
+        />
+      </div>
+      <div
+        class="menu-icon"
+        style="display: none; cursor: pointer; color: white; font-size: 24px"
+      >
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul
+        id="nav-menu"
+        style="
+          list-style-type: none;
+          margin: 0;
+          padding: 5px;
+          display: flex;
+          gap: 1rem;
+        "
+      >
+        <li>
+          <a
+            href="/"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/#services"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="/#contact"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://branchselector.com"
+            style="
+              padding: 7px;
+              color: white;
+              text-decoration: none;
+              font-size: 19.2px;
+              font-family: 'Poppins', sans-serif;
+            "
+            >BranchSelector</a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <section id="home1" class="about">
       <h1 class="heading">Privacy Policy</h1>
       <div class="row">
         <div class="content">
           <p><strong>Effective Date: </strong> 31 December, 2024</p>
-          <p>Welcome to TheSurePass.com. Your privacy is critically important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. Please read this policy carefully. If you do not agree with the terms of this policy, please do not access the site.</p>
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Information We Collect</p></strong>
-          <p><strong>1. Personal Information: </strong>When you register or use our services, we may collect personal details such as your name, email address, phone number, and payment information.</p>
-          <p><strong>2. Non-Personal Information: </strong>We may collect non-identifiable information, including your IP address, browser type, operating system, and browsing behavior on our site.</p>
-          <p><strong>3. Cookies and Tracking Technologies: </strong>We use cookies and similar technologies to enhance user experience and analyze site performance. You can control cookie preferences through your browser settings.</p>
-          
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">How We Use Your Information</p></strong>
+          <p>
+            Welcome to TheSurePass.com. Your privacy is critically important to
+            us. This Privacy Policy explains how we collect, use, disclose, and
+            safeguard your information when you visit our website. Please read
+            this policy carefully. If you do not agree with the terms of this
+            policy, please do not access the site.
+          </p>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Information We Collect
+            </p></strong
+          >
+          <p>
+            <strong>1. Personal Information: </strong>When you register or use
+            our services, we may collect personal details such as your name,
+            email address, phone number, and payment information.
+          </p>
+          <p>
+            <strong>2. Non-Personal Information: </strong>We may collect
+            non-identifiable information, including your IP address, browser
+            type, operating system, and browsing behavior on our site.
+          </p>
+          <p>
+            <strong>3. Cookies and Tracking Technologies: </strong>We use
+            cookies and similar technologies to enhance user experience and
+            analyze site performance. You can control cookie preferences through
+            your browser settings.
+          </p>
+
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              How We Use Your Information
+            </p></strong
+          >
           <p><strong>1. </strong>To provide and manage our services.</p>
           <p><strong>2. </strong>To process transactions securely.</p>
-          <p><strong>3. </strong>To improve website functionality and user experience.</p>
-          <p><strong>4. </strong>To send updates, promotional offers, or other communications (you can opt-out anytime).</p>
-          <p><strong>5. </strong>To comply with legal obligations or resolve disputes.</p>
+          <p>
+            <strong>3. </strong>To improve website functionality and user
+            experience.
+          </p>
+          <p>
+            <strong>4. </strong>To send updates, promotional offers, or other
+            communications (you can opt-out anytime).
+          </p>
+          <p>
+            <strong>5. </strong>To comply with legal obligations or resolve
+            disputes.
+          </p>
 
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Sharing Your Information</p></strong>
-          <p>We do not sell or rent your personal information to third parties. However, we may share information in the following scenarios:</p>
-          <p><strong>1. Service Providers: </strong>Trusted third-party vendors who assist in operating our website or providing services.</p>
-          <p><strong>2. Legal Obligations: </strong>To comply with legal requirements or respond to lawful requests.</p>
-          <p><strong>3. Business Transfers: </strong>In the event of a merger, acquisition, or sale of assets, your information may be transferred.</p>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Sharing Your Information
+            </p></strong
+          >
+          <p>
+            We do not sell or rent your personal information to third parties.
+            However, we may share information in the following scenarios:
+          </p>
+          <p>
+            <strong>1. Service Providers: </strong>Trusted third-party vendors
+            who assist in operating our website or providing services.
+          </p>
+          <p>
+            <strong>2. Legal Obligations: </strong>To comply with legal
+            requirements or respond to lawful requests.
+          </p>
+          <p>
+            <strong>3. Business Transfers: </strong>In the event of a merger,
+            acquisition, or sale of assets, your information may be transferred.
+          </p>
 
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Data Security</p></strong>
-          <p>We implement reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Data Security
+            </p></strong
+          >
+          <p>
+            We implement reasonable measures to protect your information from
+            unauthorized access, use, or disclosure. However, no method of
+            transmission over the internet is 100% secure, and we cannot
+            guarantee absolute security.
+          </p>
 
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Your Rights</p></strong>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Your Rights
+            </p></strong
+          >
           <p>Depending on your location, you may have the following rights:</p>
           <p><strong>1. </strong>Access to your personal information.</p>
-          <p><strong>2. </strong>Correction or deletion of inaccurate or incomplete information.</p>
-          <p><strong>3. </strong>Restrict or object to processing of your data.</p>
+          <p>
+            <strong>2. </strong>Correction or deletion of inaccurate or
+            incomplete information.
+          </p>
+          <p>
+            <strong>3. </strong>Restrict or object to processing of your data.
+          </p>
           <p><strong>4. </strong>Data portability.</p>
           <p><strong>5. </strong>Withdraw consent to data processing.</p>
 
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Third-Party Links</p></strong>
-          <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these websites.</p>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Third-Party Links
+            </p></strong
+          >
+          <p>
+            Our website may contain links to third-party websites. We are not
+            responsible for the privacy practices or content of these websites.
+          </p>
 
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Children’s Privacy</p></strong>
-          <p>We reserve the right to update this Privacy Policy at any time. Any changes will be posted on this page with the updated effective date.</p>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Children’s Privacy
+            </p></strong
+          >
+          <p>
+            We reserve the right to update this Privacy Policy at any time. Any
+            changes will be posted on this page with the updated effective date.
+          </p>
 
-          <strong><p style="text-decoration: underline; text-underline-offset: 5px;">Contact Us</p></strong>
-          <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+          <strong
+            ><p style="text-decoration: underline; text-underline-offset: 5px">
+              Contact Us
+            </p></strong
+          >
+          <p>
+            If you have questions or concerns about this Privacy Policy, please
+            contact us at:
+          </p>
           <p><strong>Email: </strong>educatorananth@gmail.com</p>
           <p><strong>Phone: </strong>+91 8951511111</p>
-          <p><strong>Address: </strong>SurePass #9, Manasa Towers, MG Road, Mangalore 575003, Karnataka, India</p>
-          <hr>
-          <p>This Privacy Policy is designed to protect your information and provide transparency. Your trust is important to us, and we are committed to safeguarding your privacy.</p>
+          <p>
+            <strong>Address: </strong>SurePass #9, Manasa Towers, MG Road,
+            Mangalore 575003, Karnataka, India
+          </p>
+          <hr />
+          <p>
+            This Privacy Policy is designed to protect your information and
+            provide transparency. Your trust is important to us, and we are
+            committed to safeguarding your privacy.
+          </p>
         </div>
       </div>
     </section>
@@ -270,4 +427,38 @@
 
     <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
   </body>
+  <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const navMenu = document.getElementById("nav-menu");
+    let isMenuOpen = false;
+
+    function checkScreenSize() {
+      if (window.innerWidth <= 1000) {
+        menuIcon.style.display = "block";
+        navMenu.style.display = isMenuOpen ? "flex" : "none";
+        navMenu.style.flexDirection = "column";
+        navMenu.style.position = "absolute";
+        navMenu.style.top = "100%";
+        navMenu.style.right = "0";
+        navMenu.style.backgroundColor = "#499143";
+        navMenu.style.width = "100%";
+        navMenu.style.padding = "1rem";
+      } else {
+        menuIcon.style.display = "none";
+        navMenu.style.display = "flex";
+        navMenu.style.flexDirection = "row";
+        navMenu.style.position = "static";
+        navMenu.style.width = "auto";
+        navMenu.style.padding = "5px";
+      }
+    }
+
+    menuIcon.addEventListener("click", () => {
+      isMenuOpen = !isMenuOpen;
+      checkScreenSize();
+    });
+
+    window.addEventListener("resize", checkScreenSize);
+    checkScreenSize();
+  </script>
 </html>
