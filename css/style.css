@@ -149,9 +149,12 @@ body{
 .home {
     min-height: 100vh; 
     width: 100vw;
-    background-image: url(../images/bgimg.jpg);
-    background-size: 100% 100%;
+    background-image: url(../images/student-cover.jpg);
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
     background-repeat: no-repeat;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; */
     display: flex;
     align-items: center;
     justify-content: center;
