@@ -945,6 +945,7 @@ body{
             color: #ffffff;
             line-height: 26px;
             text-align: justify;
+		font-size: 14px;
         }
         
         .footer .footer-top .footer-newsletter input[type="email"] {
