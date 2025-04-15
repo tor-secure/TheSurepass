@@ -999,7 +999,7 @@ body{
         .back-to-top {
             position: fixed;
             display: none;
-            background-color: #499143;;
+            background-color: #000000;;
             color: #ffffff;
             width: 45px;
             height: 45px;
@@ -1010,6 +1010,7 @@ body{
             bottom: 15px;
             transition: background 0.3s;
             z-index: 9;
+            border-radius: 5px;
         }
         
         .back-to-top i {
@@ -1017,7 +1018,32 @@ body{
         }
 
         .back-to-top i:hover {
-            color: black;
+            color: #ffffff;
+        }
+
+        .go-to-whatsapp {
+            position: fixed;
+            background-color: #25d366;;
+            color: #ffffff;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 1;
+            font-size: 35px;
+            right: 15px;
+            bottom: 65px;
+            transition: background 0.3s;
+            z-index: 9;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .go-to-whatsapp i {
+            color: #ffffff;
+        }
+
+        .go-to-whatsapp i:hover {
+            color: #ffffff;
         }
 
         .faq{
